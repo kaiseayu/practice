@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <div class='result-main-content wrapper'>
+        <h1>おすすめレシピ</h1>
+            <!-- <div class='number-label wrapper'>
+                <div class='number'>1</div>
+                <div class='number'>2</div>
+                <div class='number'>3</div>
+            </div> -->
+            <div class='wrappergrid'>
+                <div class='list'>
+
+                    <figure>
+                        <img src='{{ list2[0] }}' style='height: 150px; width: 200px'>
+                    </figure>
+                    <li><a href='{{ list3[0] }}'>{{ list1[0] }}</a></li>
+                    <p>{{ list4[0] }}</p>
+                </div>
+
+                <div class='list'>
+                    <figure>
+                        <img src='{{ list2[1] }}' style='height: 150px; width: 200px'>
+                    </figure>
+                    <li><a href='{{ list3[1] }}'>{{ list1[1] }}</a></li>
+                    <p>{{ list4[1] }}</p>
+                </div>
+
+                <div class='list'>
+                    <figure>
+                        <img src='{{ list2[2] }}' style='height: 150px; width: 200px'>
+                    </figure>
+                    <li><a href='{{ list3[2] }}'>{{ list1[2] }}</a></li>
+                    <p>{{ list4[2] }}</p>
+                </div>
+            </div>
+    </div>
+</main>
+{% endblock %}

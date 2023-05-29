@@ -1,0 +1,41 @@
+<!----------------問題２-------------->
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <div class="content">
+        <h1>食材と条件を入力してください</h1>
+        <form action="/resultrecipe" method="POST">
+            <p>
+                <label><span>食材</span>
+                    <input type="text" name="name" placeholder="食材">
+                </label>
+            </p>
+            <p>
+                <label><span>ジャンル</span>
+                    <input type="text" name="genre" placeholder='ジャンル（例：和食・洋食・中華）'>
+                </label>
+            </p>
+            <p>
+                <label><span>シーン</span>
+                    <input type="text" name="scene" placeholder='シーン（例：ダイエット・筋トレ・養生）'>
+                </label>
+            </p>
+            <div class="calc_btn">
+                <input type="submit" value='レシピ検索'>
+            </div>
+        </form>
+    </div>
+<!----------------------------------->
+
+<!----------------問題5-------------->
+    <!-- <div class="box">
+        {% if result %}
+            <p>台形の面積は</p>
+            <h2 class="result"> {{result}} </h2>
+        {% else %}
+            <h2 class="result">数字を入力してください</h2>
+        {% endif %}
+    </div> -->
+</main>
+{% endblock %}
+<!----------------------------------->
