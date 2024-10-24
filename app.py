@@ -1,4 +1,4 @@
-#---------------問題1------------------#
+##---------------問題1------------------#
 from flask import Flask, render_template, request
 from getrecipe import GetRecipeURL
 
